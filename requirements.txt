@@ -1,0 +1,7 @@
+# Whack-A-Mole – Python dependencies
+#
+# Simulation mode (default):
+pygame>=2.5.0
+
+# Raspberry Pi GPIO mode (optional – only needed on real hardware):
+# RPi.GPIO>=0.7.1
