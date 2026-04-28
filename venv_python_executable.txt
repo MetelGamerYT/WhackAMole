@@ -1,0 +1,1 @@
+/home/dermetelgameryt/PycharmProjects/Maulwurf/.venv/bin/python
