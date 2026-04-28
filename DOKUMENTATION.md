@@ -13,7 +13,6 @@ Ziel ist eine spielbare Konsole, bei der Maulwürfe zufällig auf einem 4x4-Spie
 | Bereich | Beschreibung |
 | --- | --- |
 | Lernfeld | LF 7: Vernetzte Systeme entwickeln und betreiben |
-| Betreuende Lehrkraft | Herr Timo Brunck |
 | Projektzeitraum | ab 9. Februar 2026 |
 | Geplanter Tagesaufwand | ca. 90 Minuten |
 | Programmiersprache | Python |
