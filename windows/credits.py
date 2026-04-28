@@ -79,12 +79,6 @@ class Game_Credits(QMainWindow):
     <li>Maulwurf: https://www.housedigest.com/1451823/identify-mole-snake-pest-holes-lawn/</li>
 </ul>
 
-<h3>Sounds:</h3>
-<ul>
-    <li>Hintergrundmusik: [Quelle angeben]</li>
-    <li>Soundeffekte: [Quelle angeben]</li>
-</ul>
-
 <h3>Entwicklung:</h3>
 <ul>
     <li>Programmierung: Simon, Vincent, Pascal</li>
@@ -93,7 +87,16 @@ class Game_Credits(QMainWindow):
 
 <h3>Besonderer Dank:</h3>
 <ul>
-    <li>Jörgi <3</li>
+    <li>Jörgi <3 und sein Maulwurfproblem</li>
+</ul>
+
+<h3>Betatester:</h3>
+<ul>
+    <li>Jannik | -390 | Mittel</li>
+    <li>Eric | 490 | Einfach</li>
+    <li>Hans | 480 | Einfach</li>
+    <li>Timo | 1000 | Einfach</li>
+    <li>Alexander | 640 | Einfach</li>
 </ul>
         """
         credits_text.setHtml(credits_content)

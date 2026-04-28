@@ -1,13 +1,11 @@
 import time
 
-
 try:
     import RPi.GPIO as GPIO
     from RPLCD.gpio import CharLCD
 except (ImportError, RuntimeError):
     GPIO = None
     CharLCD = None
-
 
 class HardwareController:
     ROWS = [5, 6, 13, 19]

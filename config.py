@@ -5,29 +5,29 @@ class config:
     start_countdown_seconds = 3
 
     difficulties = {
-        "Einfach": {
+        "Weichei": {
             "Time": 120,
+            "MPT": 3,
+            "MST": 2,
+            "MissPenalty": -2.5,
+        },
+        "Einfach": {
+            "Time": 75,
             "MPT": 3,  # Moles per Time
             "MST": 1.5,  # Sekunden Anzahl, die ein Maulwurf bleibt
-            "MissPenalty": -5,  # Punkte die Abgezogen werden bei einem falschen Hit
+            "MissPenalty": -5,  # Punkte die abgezogen werden bei einem falschen Hit
         },
         "Mittel": {
-            "Time": 90,
+            "Time": 60,
             "MPT": 2,
             "MST": 1,
             "MissPenalty": -10,
         },
         "Schwer": {
-            "Time": 60,
+            "Time": 30,
             "MPT": 1,
-            "MST": 0.5,
+            "MST": 0.8,
             "MissPenalty": -15,
-        },
-        "Albtraum": {
-            "Time": 60,
-            "MPT": 1,
-            "MST": 0.35,
-            "MissPenalty": -30,
         },
     }
 

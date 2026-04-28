@@ -195,14 +195,8 @@ class Game_Main(QMainWindow):
         main_layout = QVBoxLayout()
         info_layout = QHBoxLayout()
 
-        self.score_label = QLabel(f"Punkte: {self.score}")
-        self.score_label.setStyleSheet(self.info_label_style())
-
         self.difficulty_label = QLabel(f"Modus: {self.difficulty_name}")
         self.difficulty_label.setStyleSheet(self.info_label_style(font_size=22))
-
-        self.time_label = QLabel(f"Zeit: {self.time_left}s")
-        self.time_label.setStyleSheet(self.info_label_style())
 
         self.countdown_label = QLabel(f"Start in: {self.countdown_left}")
         self.countdown_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
@@ -218,11 +212,7 @@ class Game_Main(QMainWindow):
             }
         """)
 
-        info_layout.addWidget(self.score_label)
-        info_layout.addStretch()
         info_layout.addWidget(self.difficulty_label)
-        info_layout.addStretch()
-        info_layout.addWidget(self.time_label)
 
         grid_layout = QGridLayout()
         grid_layout.setSpacing(25)
@@ -490,7 +480,6 @@ class Game_Main(QMainWindow):
 
     def update_time(self):
         self.time_left -= 1
-        self.time_label.setText(f"Zeit: {self.time_left}s")
         self.update_lcd()
 
         if self.time_left <= 0:
@@ -506,7 +495,6 @@ class Game_Main(QMainWindow):
         for position in list(self.active_moles):
             self.hide_mole(position)
 
-        self.time_label.setText("Zeit: 0s")
         self.difficulty_label.setText("Spiel vorbei")
         self.hardware.led_off()
         self.hardware.lcd_show("Spiel vorbei", f"Punkte: {self.score}")
@@ -525,7 +513,6 @@ class Game_Main(QMainWindow):
 
     def add_points(self, points: int):
         self.score += points
-        self.score_label.setText(f"Punkte: {self.score}")
         self.update_lcd()
 
     def update_lcd(self):
